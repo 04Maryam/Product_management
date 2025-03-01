@@ -28,7 +28,7 @@ export default function SignupForm() {
         data.password
       );
       console.log("User signed up:", userCredential.user);
-      router.push("/dashboard");
+      router.push("/login");
     } catch (err) {
       console.error("Signup error:", err.message);
       setError(err.message);
